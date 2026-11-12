@@ -2,6 +2,7 @@
 	--font-h1:"Bungee Shade", sans-serif;
 	--font-quote:"Bungee Inline", sans-serif;
 	--font-p: "Inter", sans-serif;
+	--font-em:;
 	--font-size-lg: 2rem;
 
 }
@@ -118,6 +119,10 @@ a{
 	font-weight: 800;
 }
 
+em{
+	font-weight: 900;
+}
+
 
 
 footer{
@@ -125,6 +130,7 @@ footer{
 	display: grid;
 	justify-content: center;
 	text-align: center;
+	margin-inline:clamp(0.3rem, 1vw, 3rem);
 	margin-block-end: 2rem;
 	gap: 1rem;
 
