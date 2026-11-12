@@ -23,6 +23,9 @@
 .response_nav{
 	position: absolute;
 	inset-block-start: clamp(0.3rem, 1vw, 3rem);
+
+	font-weight: 600;
+	font-size: calc(var(--font-size-lg)*0.4);
 }
 
 .op-ed{
@@ -32,6 +35,12 @@
 .response_nav{
 	inset-inline-end: clamp(0.3rem, 1vw, 3rem);
 }
+
+.article_nav{
+	font-weight: 600;
+	font-size: calc(var(--font-size-lg)*0.4);
+}
+
 
 h1, h2{
 	font-family: var(--font-h1);
@@ -73,6 +82,11 @@ blockquote p{
 	margin-block-end:0;
 }
 
+q{
+	font-family: var(--font-quote);
+	font-weight: 600;
+}
+
 dl{
 	display: grid;
 	justify-content: center;
@@ -80,7 +94,8 @@ dl{
 	grid-template-columns: max-content;
 	margin-block-end: 1rem;
 
-
+	font-size: calc(var(--font-size-lg)*0.3);
+	font-weight: 800;
 }
 
 dd{
@@ -108,4 +123,6 @@ footer{
 	text-align: center;
 	margin-block-end: 2rem;
 	gap: 1rem;
+
+	font-size: calc(var(--font-size-lg)*0.4);
 }
