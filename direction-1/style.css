@@ -1,6 +1,7 @@
 :root{
 	--font-h1:"Paytone One", sans-serif;
 	--font-quote:"Edu TAS Beginner", cursive;
+	--font-p: "Inter", sans-serif;
 	--font-size-lg: 2rem;
 
 }
@@ -51,7 +52,11 @@ h2{
 	font-size: var(--font-size-lg);
 }
 
-.dek, blockquote{
+p, nav, dl{
+	font-family: var(--font-p) ;
+}
+
+.dek, blockquote p{
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -93,6 +98,8 @@ article{
 #original{
 	margin-block-end: var(--font-size-lg);
 }
+
+
 
 footer{
 	margin-block-start: var(--font-size-lg);
