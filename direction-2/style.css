@@ -1,13 +1,18 @@
 :root{
 	--font-h1:"Paytone One", sans-serif;
+	--font-quote:"Edu TAS Beginner", cursive;
+	--font-p: "Inter", sans-serif;
 	--font-size-lg: 2rem;
-
 }
+
 
 .op-ed,
 .response_nav{
 	position: absolute;
 	inset-block-start: clamp(0.3rem, 1vw, 3rem);
+
+	font-weight: 600;
+	font-size: calc(var(--font-size-lg)*0.4);
 }
 
 .op-ed{
@@ -44,7 +49,23 @@ h1{
 
 	margin-inline-start:clamp(0.2rem, 1vh,3rem);
 	margin-inline-end:clamp(1rem, 5vh,10rem);
+}
 
+p, nav, dl{
+	font-family: var(--font-p) ;
+}
+
+.dek, blockquote p{
+	font-family: var(--font-quote);
+	font-size: calc(var(--font-size-lg)*0.9);
+	line-height: 1.1;
+
+	margin-block:var(--font-size-lg);
+}
+
+q{
+	font-family: var(--font-quote);
+	font-weight: 600;
 }
 
 dl{
@@ -56,6 +77,9 @@ dl{
 	margin-inline-end:clamp(1rem, 5vh,10rem);
 
 	margin-block:1rem;
+
+	font-size: calc(var(--font-size-lg)*0.4);
+	font-weight: 800;
 }
 
 dl > :nth-child(1){ grid-column: 1; grid-row: 1; }
@@ -91,4 +115,14 @@ footer{
 
 	margin-inline-start:clamp(0.2rem, 1vh,3rem);
 	margin-inline-end:clamp(1rem, 5vh,10rem);
+
+	line-height:2;
+
+	font-size: calc(var(--font-size-lg)*0.4);
+	font-weight: 800;
+
+	& p{
+		line-height:1.1;
+	}
+
 }
