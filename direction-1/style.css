@@ -69,7 +69,7 @@ p, nav, dl{
 	line-height: 1.1;
 }
 
-blockquote{
+blockquote p{
 	margin-block-end:0;
 }
 
