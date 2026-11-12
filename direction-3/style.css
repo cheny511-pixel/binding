@@ -1,5 +1,7 @@
 :root{
 	--font-h1:"Paytone One", sans-serif;
+	--font-quote:"Edu TAS Beginner", cursive;
+	--font-p: "Inter", sans-serif;
 	--font-size-lg: 2rem;
 
 }
@@ -15,10 +17,15 @@
 }
 */
 
+/*inspiration: https://fontsinuse.com/uses/52952/reflectors-hub-poster*/
+
 .op-ed,
 .response_nav{
 	position: absolute;
 	inset-block-start: clamp(0.3rem, 1vw, 3rem);
+
+	font-weight: 600;
+	font-size: calc(var(--font-size-lg)*0.4);
 }
 
 .op-ed{
@@ -29,9 +36,16 @@
 	inset-inline-end: clamp(0.3rem, 1vw, 3rem);
 }
 
-h1{
+.article_nav{
+	font-weight: 600;
+	font-size: calc(var(--font-size-lg)*0.4);
+}
+
+
+h1, h2{
 	font-family: var(--font-h1);
-	font-size:var(--font-size-lg);
+	font-size:calc(var(--font-size-lg)*1.1);
+	line-height: 1.1;
 
 	display: flex;
 	justify-content: center;
@@ -43,13 +57,34 @@ h1{
 	margin-block-end: var(--font-size-lg) ;
 }
 
-.dek{
+h2{
+	font-size: var(--font-size-lg);
+}
+
+p, nav, dl{
+	font-family: var(--font-p) ;
+}
+
+.dek, blockquote p{
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	min-height:10vh;
 	margin-inline:var(--font-size-lg);
 	margin-block-end:var(--font-size-lg);
+
+	font-family: var(--font-quote);
+	font-size: calc(var(--font-size-lg)*0.9);
+	line-height: 1.1;
+}
+
+blockquote p{
+	margin-block-end:0;
+}
+
+q{
+	font-family: var(--font-quote);
+	font-weight: 600;
 }
 
 dl{
@@ -57,7 +92,10 @@ dl{
 	justify-content: center;
 	text-align: center;
 	grid-template-columns: max-content;
-	margin-block-end: 2rem;
+	margin-block-end: 1rem;
+
+	font-size: calc(var(--font-size-lg)*0.3);
+	font-weight: 800;
 }
 
 dd{
@@ -76,6 +114,14 @@ article{
 	margin-block-end: var(--font-size-lg);
 }
 
+a{
+	border-block-end: calc(var(--font-size-lg)*0.05) solid black;
+
+	padding-block-end: calc(var(--font-size-lg)*0.05);
+}
+
+
+
 footer{
 	margin-block-start: var(--font-size-lg);
 	display: grid;
@@ -83,5 +129,8 @@ footer{
 	text-align: center;
 	margin-block-end: 2rem;
 	gap: 1rem;
-}
 
+	line-height:2;
+
+	font-size: calc(var(--font-size-lg)*0.4);
+}
