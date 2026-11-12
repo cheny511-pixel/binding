@@ -114,6 +114,12 @@ article{
 	margin-block-end: var(--font-size-lg);
 }
 
+a{
+	border-block-end: calc(var(--font-size-lg)*0.05) solid black;
+
+	padding-block-end: calc(var(--font-size-lg)*0.05);
+}
+
 
 
 footer{
@@ -123,6 +129,8 @@ footer{
 	text-align: center;
 	margin-block-end: 2rem;
 	gap: 1rem;
+
+	line-height:2;
 
 	font-size: calc(var(--font-size-lg)*0.4);
 }
