@@ -50,6 +50,10 @@ h1, h2{
 	margin-block-end: var(--font-size-lg) ;
 }
 
+h1{
+	background-color: white;
+}
+
 .dek{
 	display: flex;
 	justify-content: flex-start;
@@ -142,8 +146,8 @@ footer{
 	margin-block-end: 2rem;
 	gap: 1rem;
 
-	margin-inline-start:clamp(0.2rem, 1vh,3rem);
-	margin-inline-end:clamp(1rem, 5vh,10rem);
+	margin-inline-start:clamp(0.2rem, 0.5vh,3rem);
+	margin-inline-end:clamp(1rem, 3vh,10rem);
 
 	line-height:2;
 
@@ -151,7 +155,15 @@ footer{
 	font-weight: 800;
 
 	& p{
-		line-height:1.1;
+		line-height:3;
+
+		background-color: white;
+		color:black;
+
+		& a{
+			border: 2px solid black;
+			margin-inline-end:clamp(1rem, 3vh,10rem);
+		}
 	}
 
 }
