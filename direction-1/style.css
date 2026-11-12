@@ -6,6 +6,18 @@
 
 }
 
+body {
+
+	background: radial-gradient(
+	ellipse at 15% 5%,
+	#FAF7F3 0%,
+	#F8F5F2 30%,
+	#EDE5F7 100%
+  );
+
+	color: #35206B;
+}
+
 /*
 .op-ed{
 	display: flex;
@@ -83,7 +95,6 @@ blockquote p{
 }
 
 q{
-	font-family: var(--font-quote);
 	font-weight: 600;
 }
 
@@ -115,9 +126,15 @@ article{
 }
 
 a{
-	border-block-end: calc(var(--font-size-lg)*0.05) solid black;
+	border-block-end: calc(var(--font-size-lg)*0.05) solid #70D1BC;
 
 	padding-block-end: calc(var(--font-size-lg)*0.05);
+}
+
+em, strong{
+	font-weight: 700;
+
+	background: #70D1BC80;
 }
 
 
@@ -133,4 +150,13 @@ footer{
 	line-height:2;
 
 	font-size: calc(var(--font-size-lg)*0.4);
+
+	background-color: #35206B;
+	color:#F8F5F2;
+	padding-inline: var(--font-size-lg);
+	padding-block: calc(var(--font-size-lg)*0.5);
+
+	& a {
+		border-block-end: calc(var(--font-size-lg)*0.05) solid #70D1BC;
+	}
 }
