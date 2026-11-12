@@ -1,9 +1,15 @@
 :root{
-	--font-h1:"Tilt Warp", sans-serif;
+	--font-h1:"Climate Crisis", sans-serif;
 	--font-quote:"Monofett", monospace;
 	--font-pquote: "Edu AU VIC WA NT Guides", cursive;
 	--font-p: "Inter", sans-serif;
 	--font-size-lg: 2rem;
+
+	--color-bg: #E9FB70;
+}
+
+body{
+	background-color: #E9FB70;
 }
 
 
@@ -24,9 +30,11 @@
 	inset-inline-end: clamp(0.3rem, 1vw, 3rem);
 }
 
-h1{
+h1, h2{
 	font-family: var(--font-h1);
 	font-size:calc(var(--font-size-lg)*1.3);
+
+	letter-spacing: 0.05em;
 
 	line-height:1;
 
@@ -38,7 +46,7 @@ h1{
 	margin-inline-start:clamp(0.2rem, 1vh,3rem);
 	margin-inline-end:clamp(1rem, 5vh,10rem);
 
-	margin-block-start: calc(var(--font-size-lg)*1.5) ;
+	margin-block-start: calc(var(--font-size-lg)*2) ;
 	margin-block-end: var(--font-size-lg) ;
 }
 
@@ -62,6 +70,8 @@ p, nav, dl{
 	line-height: 1.1;
 
 	margin-block:var(--font-size-lg);
+
+	color:rgb(55, 55, 55);
 }
 
 q{
@@ -99,7 +109,9 @@ article{
 	line-height: calc(var(--font-size-lg)*0.8);
 
 	margin-inline-start:clamp(0.2rem, 1vh,3rem);
-	margin-inline-end:clamp(1rem, 5vh,10rem);
+	margin-inline-end:clamp(1rem, 3vh,10rem);
+
+	background-color: white;
 }
 
 #original{
@@ -117,6 +129,8 @@ a {
 	margin-inline:0.1rem;
 
 	line-height: 1;
+
+	font-weight: 700;
 }
 
 
