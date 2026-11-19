@@ -67,6 +67,10 @@ p, nav, dl{
 	font-size: calc(var(--font-size-lg)*0.6);
 }
 
+p{
+	line-height: 1.3;
+}
+
 .dek, blockquote p, em{
 	font-family: var(--font-quote);
 	line-height: 1.1;
