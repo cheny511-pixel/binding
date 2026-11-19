@@ -64,6 +64,7 @@ h1{
 
 p, nav, dl{
 	font-family: var(--font-p) ;
+	font-size: calc(var(--font-size-lg)*0.6);
 }
 
 .dek, blockquote p, em{
