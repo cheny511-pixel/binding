@@ -160,6 +160,13 @@ p a{
 	font-size: calc(var(--font-size-lg)*0.4);
 }
 
+#share_link{
+	font-size: calc(var(--font-size-lg)*0.5);
+}
+
+.article_nav{
+	font-size: calc(var(--font-size-lg)*0.5);
+}
 
 footer{
 	margin-block-start: var(--font-size-lg);
